@@ -1,0 +1,33 @@
+{
+  "name": "grunt-freeport",
+  "version": "0.1.0",
+  "description": "Grunt task to get a free port number on localhost from specified range",
+  "keywords": [ "grunt", "gruntplugin", "port", "freeport" ],
+  "homepage": "https://github.com/deepsweet/grunt-freeport",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deepsweet/grunt-freeport.git"
+  },
+  "author": {
+    "name": "Kir Belevich",
+    "email": "kir@soulshine.in",
+    "url": "https://github.com/deepsweet"
+  },
+  "dependencies": {
+    "portscanner": "^1.0.0"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^0.8.2",
+    "jscs": "^1.6.2"
+  },
+  "scripts": {
+    "test": "eslint tasks/ && jscs tasks/"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "WTFPL"
+}
