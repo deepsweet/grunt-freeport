@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         var end = options.end || 65535;
 
         if (typeof start === 'undefined' || typeof end === 'undefined') {
-            grunt.fail.warn('You must provide both start/end options.');
+            grunt.fail.warn('you must provide both start/end options.');
         }
 
         if (typeof start !== 'number' || typeof end !== 'number') {
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         }
 
         if (end < start) {
-            grunt.fail.warn('end port must be >= start port');
+            grunt.fail.warn('end port must be >= start port.');
         }
 
         portscanner.findAPortNotInUse(start, end, '127.0.0.1', function(err, port) {
