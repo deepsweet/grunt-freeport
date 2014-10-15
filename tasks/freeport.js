@@ -3,7 +3,7 @@
 var portscanner = require('portscanner');
 
 module.exports = function(grunt) {
-    grunt.registerMultiTask('freeport', 'Get free port on locahost', function() {
+    grunt.registerMultiTask('freeport', 'Get a free port number on localhost from specified range', function() {
         var done = this.async();
         var options = this.options();
         var name = 'freeport' + (this.target ? '.' + this.target : '');
